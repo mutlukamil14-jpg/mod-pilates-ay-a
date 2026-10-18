@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mod Pilates — Bilgi Talebi</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body class="bg-brand-bg text-brand-text font-sans flex flex-col min-h-screen transition-colors duration-300">
+
+  <!-- ============ NAVBAR (Tema Uyumlu) ============ -->
+  <header class="sticky top-0 z-50 bg-brand-bg/80 backdrop-blur-md shadow-sm transition-all duration-300 border-b border-gray-100 dark:border-gray-800">
+    <nav class="max-w-6xl mx-auto px-4 h-20 flex items-center justify-between">
+      
+      <!-- Logo -->
+      <a href="./index.html" class="flex items-center">
+        <img src="./assets/img/logo.png" alt="Mod Pilates Logo" class="h-16 w-auto object-contain">
+      </a>
+
+      <!-- Masaüstü Menü ve Sağ Taraf -->
+      <div class="hidden md:flex items-center gap-6 text-sm font-medium">
+        <ul class="flex items-center gap-5">
+          <li><a href="./index.html" class="hover:text-[#5C6F5A] dark:hover:text-[#7A9A7E] transition">Ana Sayfa</a></li>
+          <li><a href="./hakkimizda.html" class="hover:text-[#5C6F5A] dark:hover:text-[#7A9A7E] transition">Hakkımızda</a></li>
+          <li><a href="./dersler.html" class="hover:text-[#5C6F5A] dark:hover:text-[#7A9A7E] transition">Dersler</a></li>
+          <li><a href="./antrenorler.html" class="hover:text-[#5C6F5A] dark:hover:text-[#7A9A7E] transition">Antrenörler</a></li>
+          <li><a href="./program.html" class="hover:text-[#5C6F5A] dark:hover:text-[#7A9A7E] transition">Program</a></li>
+          <li><a href="./iletisim.html" class="hover:text-[#5C6F5A] dark:hover:text-[#7A9A7E] transition">İletişim</a></li>
+        </ul>
+
+        <div class="flex items-center gap-4 ml-4">
+          <!-- Tema Değiştirme Butonu -->
+          <button id="theme-toggle" class="p-2 text-brand-text hover:text-[#5C6F5A] dark:hover:text-[#7A9A7E] transition rounded-full" aria-label="Tema Değiştir">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
+            </svg>
+          </button>
+          
+          <!-- Bilgi Talebi Butonu (Aktif Sayfa) -->
+          <a href="./bilgi-talebi.html" class="px-5 py-2.5 bg-[#5C6F5A] text-white rounded-lg hover:bg-[#4A5C48] transition shadow-sm whitespace-nowrap">
+            Bilgi Talebi
+          </a>
+        </div>
+      </div>
+
+      <!-- Mobil Hamburger -->
+      <button id="menu-btn" class="md:hidden text-2xl text-brand-text" aria-label="Menü">☰</button>
+    </nav>
+    
+    <!-- Mobil Menü -->
+    <ul id="mobile-menu" class="hidden md:hidden px-4 pb-4 space-y-2 text-sm font-medium bg-brand-bg border-t border-gray-100 dark:border-gray-800">
+        <li><a href="./index.html" class="block py-2 hover:text-[#5C6F5A] dark:hover:text-[#7A9A7E]">Ana Sayfa</a></li>
+        <li><a href="./hakkimizda.html" class="block py-2 hover:text-[#5C6F5A] dark:hover:text-[#7A9A7E]">Hakkımızda</a></li>
+        <li><a href="./dersler.html" class="block py-2 hover:text-[#5C6F5A] dark:hover:text-[#7A9A7E]">Dersler</a></li>
+        <li><a href="./antrenorler.html" class="block py-2 hover:text-[#5C6F5A] dark:hover:text-[#7A9A7E]">Antrenörler</a></li>
+        <li><a href="./program.html" class="block py-2 hover:text-[#5C6F5A] dark:hover:text-[#7A9A7E]">Program</a></li>
+        <li><a href="./iletisim.html" class="block py-2 hover:text-[#5C6F5A] dark:hover:text-[#7A9A7E]">İletişim</a></li>
+        <li><a href="./bilgi-talebi.html" class="block py-2 text-[#5C6F5A] dark:text-[#7A9A7E] font-semibold">Bilgi Talebi</a></li>
+    </ul>
+  </header>
+
+  <!-- ============ İÇERİK ============ -->
+  <main class="flex-grow flex items-center justify-center py-16 px-4 bg-brand-bg">
+    
+    <div class="w-full max-w-2xl">
+      
+      <!-- Başlık -->
+      <div class="text-center mb-10">
+        <h1 class="text-3xl md:text-4xl font-bold text-brand-text">Bilgi Talebi</h1>
+        <p class="text-gray-600 dark:text-gray-400 mt-3">Aşağıdaki formu doldurun, en kısa sürede size dönüş yapalım.</p>
+        <div class="w-16 h-1 bg-[#5C6F5A] mx-auto mt-4 rounded-full"></div>
+      </div>
+
+      <!-- Form Kartı (Koyu Tema Uyumlu) -->
+      <div class="bg-brand-card p-8 md:p-10 rounded-2xl border border-gray-200 dark:border-gray-800 shadow-sm transition-colors duration-300">
+        <form action="https://formspree.io/f/mljgvdpg" method="POST" class="space-y-5">
+          
+          <div>
+            <label for="name" class="block text-sm font-semibold text-brand-text mb-2">Ad Soyad</label>
+            <input type="text" id="name" name="name" required
+                   class="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-700 focus:border-[#5C6F5A] dark:focus:border-[#7A9A7E] focus:ring-1 focus:ring-[#5C6F5A] dark:focus:ring-[#7A9A7E] outline-none transition bg-transparent text-brand-text placeholder-gray-500">
+          </div>
+
+          <div>
+            <label for="phone" class="block text-sm font-semibold text-brand-text mb-2">Telefon Numarası</label>
+            <input type="tel" id="phone" name="phone" required placeholder="05XX XXX XX XX"
+                   class="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-700 focus:border-[#5C6F5A] dark:focus:border-[#7A9A7E] focus:ring-1 focus:ring-[#5C6F5A] dark:focus:ring-[#7A9A7E] outline-none transition bg-transparent text-brand-text placeholder-gray-500">
+          </div>
+
+          <div>
+            <label for="lesson" class="block text-sm font-semibold text-brand-text mb-2">İlgilendiğiniz Ders</label>
+            <select id="lesson" name="lesson" required
+                    class="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-700 focus:border-[#5C6F5A] dark:focus:border-[#7A9A7E] focus:ring-1 focus:ring-[#5C6F5A] dark:focus:ring-[#7A9A7E] outline-none transition bg-transparent text-brand-text dark:bg-[#1e1e1e]">
+              <option value="" disabled selected>Seçiniz...</option>
+              <option value="reformer" class="dark:bg-[#1e1e1e]">Reformer Pilates</option>
+              <option value="performans" class="dark:bg-[#1e1e1e]">Performans Antrenmanları</option>
+              <option value="grup" class="dark:bg-[#1e1e1e]">Grup Dersleri</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="message" class="block text-sm font-semibold text-brand-text mb-2">Mesajınız (İsteğe Bağlı)</label>
+            <textarea id="message" name="message" rows="4"
+                      class="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-700 focus:border-[#5C6F5A] dark:focus:border-[#7A9A7E] focus:ring-1 focus:ring-[#5C6F5A] dark:focus:ring-[#7A9A7E] outline-none transition resize-none bg-transparent text-brand-text placeholder-gray-500"></textarea>
+          </div>
+
+          <div class="pt-2">
+            <button type="submit" 
+                    class="w-full py-3.5 bg-[#5C6F5A] text-white font-semibold rounded-lg hover:bg-[#4A5C48] transition text-lg shadow-sm">
+              Bilgi Talebi Gönder
+            </button>
+          </div>
+
+          <p class="text-xs text-center text-gray-500 dark:text-gray-500 mt-4">
+            * Bilgileriniz sadece sizinle iletişime geçmek için kullanılacaktır.
+          </p>
+
+        </form>
+      </div>
+      
+    </div>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="bg-[#2A2A2A] text-[#F9F6F0] mt-auto border-t border-gray-800">
+    <div class="max-w-6xl mx-auto px-4 py-10 grid md:grid-cols-3 gap-8 text-sm">
+      
+      <div>
+        <h3 class="text-lg font-semibold mb-2 text-white">Mod Pilates</h3>
+        <p class="text-gray-400">Daha güçlü bir sen için, her seviyeye uygun reformer ve grup dersleri.</p>
+      </div>
+
+      <div>
+        <h3 class="font-semibold mb-2 text-white">İletişim</h3>
+        <p class="text-gray-400 mb-1">📍 Adres: (yakında)</p>
+        <p class="text-gray-400 mb-1">📞 Tel: (yakında)</p>
+      </div>
+
+      <div>
+        <h3 class="font-semibold mb-2 text-white">Sosyal</h3>
+        <a href="#" class="text-gray-400 hover:text-white transition">Instagram</a>
+      </div>
+
+    </div>
+    <div class="border-t border-gray-700 text-center py-4 text-xs text-gray-500">
+      © 2026 Mod Pilates. Tüm hakları saklıdır.
+    </div>
+  </footer>
+
+  <!-- ============ JS ============ -->
+  <script src="./assets/js/main.js"></script>
+</body>
+</html>

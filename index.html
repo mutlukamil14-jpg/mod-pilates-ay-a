@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mod Pilates — Ana Sayfa</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body class="bg-brand-bg text-brand-text font-sans flex flex-col min-h-screen transition-colors duration-300">
+
+  <!-- ============ NAVBAR ============ -->
+  <header class="sticky top-0 z-50 bg-brand-bg/80 backdrop-blur-md shadow-sm transition-all duration-300 border-b border-gray-100 dark:border-gray-800">
+    <nav class="max-w-6xl mx-auto px-4 h-20 flex items-center justify-between">
+      
+      <!-- Logo -->
+      <a href="./index.html" class="flex items-center">
+        <img src="./assets/img/logo.png" alt="Mod Pilates Logo" class="h-16 w-auto object-contain mix-blend-multiply dark:mix-blend-screen">
+      </a>
+
+      <!-- Masaüstü Menü ve Sağ Taraf -->
+      <div class="hidden md:flex items-center gap-6 text-sm font-medium">
+        <!-- Menü Linkleri -->
+        <ul class="flex items-center gap-5">
+          <li><a href="./index.html" class="text-[#5C6F5A] dark:text-[#7A9A7E] font-semibold transition">Ana Sayfa</a></li>
+          <li><a href="./hakkimizda.html" class="hover:text-[#5C6F5A] dark:hover:text-[#7A9A7E] transition">Hakkımızda</a></li>
+          <li><a href="./dersler.html" class="hover:text-[#5C6F5A] dark:hover:text-[#7A9A7E] transition">Dersler</a></li>
+          <li><a href="./antrenorler.html" class="hover:text-[#5C6F5A] dark:hover:text-[#7A9A7E] transition">Antrenörler</a></li>
+          <li><a href="./program.html" class="hover:text-[#5C6F5A] dark:hover:text-[#7A9A7E] transition">Program</a></li>
+          <li><a href="./iletisim.html" class="hover:text-[#5C6F5A] dark:hover:text-[#7A9A7E] transition">İletişim</a></li>
+        </ul>
+
+        <!-- Sağ Taraf: Tema Butonu ve Bilgi Talebi -->
+        <div class="flex items-center gap-4 ml-4">
+          <!-- Tema Değiştirme Butonu -->
+          <button id="theme-toggle" class="p-2 text-brand-text hover:text-[#5C6F5A] dark:hover:text-[#7A9A7E] transition rounded-full" aria-label="Tema Değiştir">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
+            </svg>
+          </button>
+          
+          <!-- Bilgi Talebi Butonu -->
+          <a href="./bilgi-talebi.html" class="px-5 py-2.5 bg-[#5C6F5A] text-white rounded-lg hover:bg-[#4A5C48] transition shadow-sm whitespace-nowrap">
+            Bilgi Talebi
+          </a>
+        </div>
+      </div>
+
+      <!-- Mobil Hamburger -->
+      <button id="menu-btn" class="md:hidden text-2xl text-brand-text" aria-label="Menü">☰</button>
+    </nav>
+    
+    <!-- Mobil Menü -->
+    <ul id="mobile-menu" class="hidden md:hidden px-4 pb-4 space-y-2 text-sm font-medium bg-brand-bg border-t border-gray-100 dark:border-gray-800">
+        <li><a href="./index.html" class="block py-2 text-[#5C6F5A] dark:text-[#7A9A7E] font-semibold">Ana Sayfa</a></li>
+        <li><a href="./hakkimizda.html" class="block py-2 hover:text-[#5C6F5A] dark:hover:text-[#7A9A7E]">Hakkımızda</a></li>
+        <li><a href="./dersler.html" class="block py-2 hover:text-[#5C6F5A] dark:hover:text-[#7A9A7E]">Dersler</a></li>
+        <li><a href="./antrenorler.html" class="block py-2 hover:text-[#5C6F5A] dark:hover:text-[#7A9A7E]">Antrenörler</a></li>
+        <li><a href="./program.html" class="block py-2 hover:text-[#5C6F5A] dark:hover:text-[#7A9A7E]">Program</a></li>
+        <li><a href="./iletisim.html" class="block py-2 hover:text-[#5C6F5A] dark:hover:text-[#7A9A7E]">İletişim</a></li>
+        <li><a href="./bilgi-talebi.html" class="block py-2 text-[#5C6F5A] dark:text-[#7A9A7E] font-semibold">Bilgi Talebi</a></li>
+    </ul>
+  </header>
+
+  <!-- ============ İÇERİK ============ -->
+  <main class="flex-grow">
+
+        <!-- 1. FULL-SCREEN SABİT HERO -->
+    <section class="relative h-screen min-h-[600px] flex items-center justify-center text-center text-white bg-fixed bg-cover bg-center" 
+             style="background-image: url('./assets/img/image.png');">
+      
+      <div class="absolute inset-0 bg-black/50"></div>
+
+      <div class="relative z-10 px-4 max-w-4xl mt-16">
+        <h1 class="text-5xl md:text-7xl font-bold leading-tight tracking-tight">Daha Güçlü <br> Bir Sen</h1>
+        <p class="mt-6 text-lg md:text-2xl text-gray-200">Her seviyeye uygun reformer ve grup dersleriyle kendine zaman ayır.</p>
+        <div class="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="./dersler.html" class="px-8 py-4 bg-[#5C6F5A] rounded-xl font-semibold text-lg hover:bg-[#4A5C48] transition shadow-lg">Dersleri Keşfet</a>
+          <a href="./iletisim.html" class="px-8 py-4 border-2 border-white rounded-xl font-semibold text-lg hover:bg-white hover:text-[#2A2A2A] transition">Bize Ulaş</a>
+        </div>
+      </div>
+
+      <!-- Aşağı Kaydırma İndikatörü -->
+      <div class="absolute bottom-12 left-1/2 transform -translate-x-1/2 flex flex-col items-center animate-bounce">
+        <span class="text-sm text-white/80 mb-2 tracking-widest uppercase text-xs">Keşfet</span>
+        <svg class="w-6 h-6 text-white/80" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+        </svg>
+      </div>
+    </section>
+
+    <!-- 2. 3 KUTU -->
+    <section class="bg-brand-bg py-16 transition-colors duration-300">
+      <div class="max-w-6xl mx-auto px-4">
+        <div class="grid md:grid-cols-3 gap-6">
+          <div class="p-8 bg-brand-card rounded-2xl shadow-sm hover:shadow-md hover:-translate-y-1 transition text-center border border-gray-100 dark:border-gray-800">
+            <div class="text-4xl mb-4">🏋️</div>
+            <h3 class="font-bold text-xl text-brand-text">Reformer Pilates</h3>
+            <p class="text-sm text-gray-600 dark:text-gray-400 mt-3">Ekipmanla desteklenen, kontrollü ve etkili çalışma.</p>
+          </div>
+          <div class="p-8 bg-brand-card rounded-2xl shadow-sm hover:shadow-md hover:-translate-y-1 transition text-center border border-gray-100 dark:border-gray-800">
+            <div class="text-4xl mb-4">👥</div>
+            <h3 class="font-bold text-xl text-brand-text">Grup Dersleri</h3>
+            <p class="text-sm text-gray-600 dark:text-gray-400 mt-3">Motivasyonu yüksek, keyifli grup seansları.</p>
+          </div>
+          <div class="p-8 bg-brand-card rounded-2xl shadow-sm hover:shadow-md hover:-translate-y-1 transition text-center border border-gray-100 dark:border-gray-800">
+            <div class="text-4xl mb-4">🌱</div>
+            <h3 class="font-bold text-xl text-brand-text">Her Seviye</h3>
+            <p class="text-sm text-gray-600 dark:text-gray-400 mt-3">Yeni başlayandan ileri seviyeye uygun programlar.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. DÜKKAN FOTOĞRAFLARI (GALERİ) -->
+    <section class="bg-brand-card py-20 transition-colors duration-300">
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl md:text-4xl font-bold text-brand-text">Stüdyomuzu Keşfedin</h2>
+          <p class="text-gray-600 dark:text-gray-400 mt-3 max-w-2xl mx-auto">Size özel, ferah ve hijyenik ortamımızda pilatesin keyfini çıkarın.</p>
+          <div class="w-16 h-1 bg-[#5C6F5A] mx-auto mt-6 rounded-full"></div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div class="h-80 rounded-2xl overflow-hidden group">
+            <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?q=80&w=800&auto=format&fit=crop" alt="Stüdyo 1" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+          </div>
+          <div class="h-80 rounded-2xl overflow-hidden group">
+            <img src="https://images.unsplash.com/photo-1599447421416-3414500d18a5?q=80&w=800&auto=format&fit=crop" alt="Stüdyo 2" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+          </div>
+          <div class="h-80 rounded-2xl overflow-hidden group">
+            <img src="https://images.unsplash.com/photo-1548690312-e3b507d8c110?q=80&w=800&auto=format&fit=crop" alt="Stüdyo 3" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. KONUM ÖNİZLEME -->
+    <section class="bg-brand-bg py-16 transition-colors duration-300">
+      <div class="max-w-6xl mx-auto px-4">
+        <div class="grid md:grid-cols-2 gap-8 items-center bg-brand-card rounded-2xl overflow-hidden shadow-sm border border-gray-100 dark:border-gray-800">
+          <iframe src="https://www.google.com/maps?q=Istanbul&output=embed" class="w-full h-64 md:h-96 border-0 grayscale hover:grayscale-0 transition duration-500" loading="lazy"></iframe>
+          <div class="p-8 md:p-12">
+            <h2 class="text-3xl font-bold mb-4 text-brand-text">Bize Ulaşın</h2>
+            <p class="text-gray-600 dark:text-gray-400 mb-3 text-lg">📍 Adres: (yakında eklenecek)</p>
+            <p class="text-gray-600 dark:text-gray-400 mb-3 text-lg">📞 Tel: (yakında eklenecek)</p>
+            <p class="text-gray-600 dark:text-gray-400 mb-6 text-lg">🕐 Hafta içi 09:00 – 21:00</p>
+            <a href="./iletisim.html" class="inline-block px-6 py-3 bg-[#5C6F5A] text-white font-semibold rounded-xl hover:bg-[#4A5C48] transition shadow-md">Detaylı Bilgi</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="bg-[#2A2A2A] text-[#F9F6F0] mt-auto border-t border-gray-800">
+    <div class="max-w-6xl mx-auto px-4 py-12 grid md:grid-cols-3 gap-8 text-sm">
+      
+      <div>
+        <h3 class="text-xl font-bold mb-3 text-white">Mod Pilates</h3>
+        <p class="text-gray-400">Daha güçlü bir sen için, her seviyeye uygun reformer ve grup dersleri.</p>
+      </div>
+
+      <div>
+        <h3 class="font-semibold text-white mb-3">İletişim</h3>
+        <p class="text-gray-400 mb-1">📍 Örnek Mah. Pilates Sok. No:1</p>
+        <p class="text-gray-400 mb-1">📞 0216 123 45 67</p>
+        <p class="text-gray-400">✉️ info@modpilates.com</p>
+      </div>
+
+      <div>
+        <h3 class="font-semibold text-white mb-3">Sosyal Medya</h3>
+        <a href="#" class="text-gray-400 hover:text-white transition">Instagram</a>
+      </div>
+
+    </div>
+    <div class="border-t border-gray-700 text-center py-4 text-xs text-gray-500">
+      © 2026 Mod Pilates. Tüm hakları saklıdır.
+    </div>
+  </footer>
+
+  <!-- ============ JS ============ -->
+  <script src="./assets/js/main.js"></script>
+</body>
+</html>

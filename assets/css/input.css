@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --bg-color: #ffffff;
+    --text-color: #2A2A2A;
+    --card-bg: #F9F6F0;
+  }
+
+  .dark {
+    --bg-color: #121212;
+    --text-color: #e5e5e5;
+    --card-bg: #1e1e1e;
+  }
+
+  /* BODY İÇİN ZORUNLU RENK ATAMASI */
+  body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+}

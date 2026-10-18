@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mod Pilates — İletişim</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body class="bg-brand-bg text-brand-text font-sans flex flex-col min-h-screen transition-colors duration-300">
+
+  <!-- ============ NAVBAR (Tema Uyumlu) ============ -->
+  <header class="sticky top-0 z-50 bg-brand-bg/80 backdrop-blur-md shadow-sm transition-all duration-300 border-b border-gray-100 dark:border-gray-800">
+    <nav class="max-w-6xl mx-auto px-4 h-20 flex items-center justify-between">
+      
+      <!-- Logo -->
+      <a href="./index.html" class="flex items-center">
+        <img src="./assets/img/logo.png" alt="Mod Pilates Logo" class="h-16 w-auto object-contain">
+      </a>
+
+      <!-- Masaüstü Menü ve Sağ Taraf -->
+      <div class="hidden md:flex items-center gap-6 text-sm font-medium">
+        <ul class="flex items-center gap-5">
+          <li><a href="./index.html" class="hover:text-[#5C6F5A] dark:hover:text-[#7A9A7E] transition">Ana Sayfa</a></li>
+          <li><a href="./hakkimizda.html" class="hover:text-[#5C6F5A] dark:hover:text-[#7A9A7E] transition">Hakkımızda</a></li>
+          <li><a href="./dersler.html" class="hover:text-[#5C6F5A] dark:hover:text-[#7A9A7E] transition">Dersler</a></li>
+          <li><a href="./antrenorler.html" class="hover:text-[#5C6F5A] dark:hover:text-[#7A9A7E] transition">Antrenörler</a></li>
+          <li><a href="./program.html" class="hover:text-[#5C6F5A] dark:hover:text-[#7A9A7E] transition">Program</a></li>
+          <li><a href="./iletisim.html" class="text-[#5C6F5A] dark:text-[#7A9A7E] font-semibold transition">İletişim</a></li>
+        </ul>
+
+        <div class="flex items-center gap-4 ml-4">
+          <!-- Tema Değiştirme Butonu -->
+          <button id="theme-toggle" class="p-2 text-brand-text hover:text-[#5C6F5A] dark:hover:text-[#7A9A7E] transition rounded-full" aria-label="Tema Değiştir">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
+            </svg>
+          </button>
+          
+          <!-- Bilgi Talebi Butonu -->
+          <a href="./bilgi-talebi.html" class="px-5 py-2.5 bg-[#5C6F5A] text-white rounded-lg hover:bg-[#4A5C48] transition shadow-sm whitespace-nowrap">
+            Bilgi Talebi
+          </a>
+        </div>
+      </div>
+
+      <!-- Mobil Hamburger -->
+      <button id="menu-btn" class="md:hidden text-2xl text-brand-text" aria-label="Menü">☰</button>
+    </nav>
+    
+    <!-- Mobil Menü -->
+    <ul id="mobile-menu" class="hidden md:hidden px-4 pb-4 space-y-2 text-sm font-medium bg-brand-bg border-t border-gray-100 dark:border-gray-800">
+        <li><a href="./index.html" class="block py-2 hover:text-[#5C6F5A] dark:hover:text-[#7A9A7E]">Ana Sayfa</a></li>
+        <li><a href="./hakkimizda.html" class="block py-2 hover:text-[#5C6F5A] dark:hover:text-[#7A9A7E]">Hakkımızda</a></li>
+        <li><a href="./dersler.html" class="block py-2 hover:text-[#5C6F5A] dark:hover:text-[#7A9A7E]">Dersler</a></li>
+        <li><a href="./antrenorler.html" class="block py-2 hover:text-[#5C6F5A] dark:hover:text-[#7A9A7E]">Antrenörler</a></li>
+        <li><a href="./program.html" class="block py-2 hover:text-[#5C6F5A] dark:hover:text-[#7A9A7E]">Program</a></li>
+        <li><a href="./iletisim.html" class="block py-2 text-[#5C6F5A] dark:text-[#7A9A7E] font-semibold">İletişim</a></li>
+        <li><a href="./bilgi-talebi.html" class="block py-2 text-[#5C6F5A] dark:text-[#7A9A7E] font-semibold">Bilgi Talebi</a></li>
+    </ul>
+  </header>
+
+  <!-- ============ İÇERİK ============ -->
+  <main class="flex-grow max-w-6xl mx-auto px-4 py-16 w-full bg-brand-bg">
+    
+    <!-- Başlık -->
+    <div class="text-center mb-12">
+      <h1 class="text-3xl md:text-4xl font-bold text-brand-text">Bize Ulaşın</h1>
+      <p class="text-gray-600 dark:text-gray-400 mt-3">Sorularınız için bize ulaşabilir veya stüdyomuzu ziyaret edebilirsiniz.</p>
+      <div class="w-16 h-1 bg-[#5C6F5A] mx-auto mt-4 rounded-full"></div>
+    </div>
+
+    <!-- Harita ve Bilgiler -->
+    <div class="grid md:grid-cols-2 gap-8 bg-brand-card rounded-2xl border border-gray-100 dark:border-gray-800 overflow-hidden shadow-sm">
+      
+      <!-- Sol Taraf: Harita (Koyu temada göz yormaması için grayscale) -->
+      <div class="h-80 md:h-auto min-h-[400px]">
+        <iframe
+          src="https://www.google.com/maps?q=Istanbul&output=embed"
+          class="w-full h-full border-0 grayscale hover:grayscale-0 transition duration-500"
+          loading="lazy">
+        </iframe>
+      </div>
+
+      <!-- Sağ Taraf: Bilgiler -->
+      <div class="p-8 md:p-12 flex flex-col justify-center">
+        <h2 class="text-2xl font-bold mb-6 text-brand-text">İletişim Bilgileri</h2>
+        
+        <div class="space-y-6">
+          <!-- Adres -->
+          <div class="flex items-start gap-4">
+            <div class="w-10 h-10 rounded-full bg-brand-bg dark:bg-[#2a2a2a] border border-gray-200 dark:border-gray-700 flex items-center justify-center shrink-0 text-xl">📍</div>
+            <div>
+              <h3 class="font-semibold text-brand-text">Adres</h3>
+              <p class="text-gray-600 dark:text-gray-400 text-sm mt-1">Örnek Mahallesi, Pilates Sokak No: 1<br>Kadıköy / İstanbul</p>
+            </div>
+          </div>
+
+          <!-- Telefon -->
+          <div class="flex items-start gap-4">
+            <div class="w-10 h-10 rounded-full bg-brand-bg dark:bg-[#2a2a2a] border border-gray-200 dark:border-gray-700 flex items-center justify-center shrink-0 text-xl">📞</div>
+            <div>
+              <h3 class="font-semibold text-brand-text">Telefon</h3>
+              <p class="text-gray-600 dark:text-gray-400 text-sm mt-1">
+                <a href="tel:+902161234567" class="hover:text-[#5C6F5A] dark:hover:text-[#7A9A7E] transition">0216 123 45 67</a>
+              </p>
+            </div>
+          </div>
+
+          <!-- E-posta -->
+          <div class="flex items-start gap-4">
+            <div class="w-10 h-10 rounded-full bg-brand-bg dark:bg-[#2a2a2a] border border-gray-200 dark:border-gray-700 flex items-center justify-center shrink-0 text-xl">✉️</div>
+            <div>
+              <h3 class="font-semibold text-brand-text">E-posta</h3>
+              <p class="text-gray-600 dark:text-gray-400 text-sm mt-1">
+                <a href="mailto:info@modpilates.com" class="hover:text-[#5C6F5A] dark:hover:text-[#7A9A7E] transition">info@modpilates.com</a>
+              </p>
+            </div>
+          </div>
+
+          <!-- Çalışma Saatleri -->
+          <div class="flex items-start gap-4">
+            <div class="w-10 h-10 rounded-full bg-brand-bg dark:bg-[#2a2a2a] border border-gray-200 dark:border-gray-700 flex items-center justify-center shrink-0 text-xl">🕐</div>
+            <div>
+              <h3 class="font-semibold text-brand-text">Çalışma Saatleri</h3>
+              <p class="text-gray-600 dark:text-gray-400 text-sm mt-1">Hafta içi: 09:00 – 21:00<br>Hafta sonu: 10:00 – 18:00</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sosyal Medya Butonu -->
+        <div class="mt-8 pt-6 border-t border-gray-200 dark:border-gray-700">
+          <a href="https://instagram.com" target="_blank" class="inline-flex items-center gap-2 text-sm font-semibold text-[#5C6F5A] dark:text-[#7A9A7E] hover:text-[#4A5C48] dark:hover:text-[#5C6F5A] transition">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            Instagram'da Takip Et
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="bg-[#2A2A2A] text-[#F9F6F0] mt-auto border-t border-gray-800">
+    <div class="max-w-6xl mx-auto px-4 py-10 grid md:grid-cols-3 gap-8 text-sm">
+      
+      <div>
+        <h3 class="text-lg font-semibold mb-2 text-white">Mod Pilates</h3>
+        <p class="text-gray-400">Daha güçlü bir sen için, her seviyeye uygun reformer ve grup dersleri.</p>
+      </div>
+
+      <div>
+        <h3 class="font-semibold mb-2 text-white">İletişim</h3>
+        <p class="text-gray-400 mb-1">📍 Adres: (yakında)</p>
+        <p class="text-gray-400 mb-1">📞 Tel: (yakında)</p>
+      </div>
+
+      <div>
+        <h3 class="font-semibold mb-2 text-white">Sosyal</h3>
+        <a href="#" class="text-gray-400 hover:text-white transition">Instagram</a>
+      </div>
+
+    </div>
+    <div class="border-t border-gray-700 text-center py-4 text-xs text-gray-500">
+      © 2026 Mod Pilates. Tüm hakları saklıdır.
+    </div>
+  </footer>
+
+  <!-- ============ JS ============ -->
+  <script src="./assets/js/main.js"></script>
+</body>
+</html>
